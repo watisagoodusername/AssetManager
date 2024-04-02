@@ -1,4 +1,3 @@
-```python
 """
 AssetManager URL Configuration
 
@@ -33,4 +32,3 @@ urlpatterns = [
     re_path(r'^about$', system.views.about, name='about'),
     re_path(r'^qr$', system.views.qr, name='qr'),
 ]
-```
