@@ -1,0 +1,109 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>FinalProject</Name>
+    <RootNamespace>FinalProject</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1d1e9ae6-d849-4bad-844d-5d586e83b04f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>FinalProject.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assetmanage\admin.py" />
+    <Compile Include="Assetmanage\apps.py" />
+    <Compile Include="Assetmanage\migrations\__init__.py" />
+    <Compile Include="Assetmanage\models.py" />
+    <Compile Include="Assetmanage\tests.py" />
+    <Compile Include="Assetmanage\views.py" />
+    <Compile Include="Assetmanage\__init__.py" />
+    <Compile Include="Booking\admin.py" />
+    <Compile Include="Booking\apps.py" />
+    <Compile Include="Booking\migrations\__init__.py" />
+    <Compile Include="Booking\models.py" />
+    <Compile Include="Booking\tests.py" />
+    <Compile Include="Booking\views.py" />
+    <Compile Include="Booking\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="FinalProject\__init__.py" />
+    <Compile Include="FinalProject\settings.py" />
+    <Compile Include="FinalProject\urls.py" />
+    <Compile Include="FinalProject\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assetmanage\templates\Assetmanage\index.html" />
+    <Content Include="Booking\templates\Booking\index.html" />
+    <Content Include="Booking\templates\Booking\displaytime.html" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assetmanage\" />
+    <Folder Include="Assetmanage\migrations\" />
+    <Folder Include="Assetmanage\templates\" />
+    <Folder Include="Assetmanage\templates\Assetmanage\" />
+    <Folder Include="Booking\" />
+    <Folder Include="Booking\migrations\" />
+    <Folder Include="Booking\templates\" />
+    <Folder Include="Booking\templates\Booking\" />
+    <Folder Include="FinalProject\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
